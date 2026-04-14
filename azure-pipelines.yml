@@ -21,7 +21,11 @@ steps:
 - task: HCLAppScanOnCloud@2
   inputs:
     AppSecTestService: 'ASoC'
-    applications: 'f099bbb6-f82e-4139-bc59-db6be079d78e'
+    applications: '2d0ee5f3-cd31-4c5a-bdf4-1b84413fc887'
     scanname: 'Test ADO'
     scantype: 'static'
     scanMethod: 'IRX'
+    FailBuildConfiguration: true
+    FailBuildChoice: 'conditionset'
+    buildfailHigh: true
+    buildfailconditionHigh: '1'

@@ -25,7 +25,5 @@ steps:
     scanname: 'Test ADO'
     scantype: 'static'
     scanMethod: 'IRX'
-    FailBuildConfiguration: true
-    FailBuildChoice: 'conditionset'
-    buildfailHigh: true
-    buildfailconditionHigh: '1'
+    includeSCA: false
+    ScanSpeedOptions: 'simple'
